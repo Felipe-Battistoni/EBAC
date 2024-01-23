@@ -1,13 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário EBAC - javascript</title>
 </head>
 <body>
-    <img src="./imagem_module 3.jpg" alt="Uma abelha numa flor amarela" srcset="">
-    <audio controls src="./musica_module 3.mp3"></audio>
-    <video controls src="./video_module 3.mp4"></video>
+    <form onsubmit="event.preventDefault(); validarFormulario();">
+        <label for="campoA">Campo A:</label><br>
+        <input class="number" type="number" id="campoA" name="campoA"><br>
+        <label for="campoB">Campo B:</label><br>
+        <input class="number" type="number" id="campoB" name="campoB"><br>
+        <input class="verificar" type="submit" value="Verificar">
+    </form>
+    <p id="mensagem"></p>
+
+    <script src="javascript.js"></script>
 </body>
 </html>
