@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício Bootstrap</title>
+</head>
+<body>
+  <div class="grid text-center">
+    <div class="g-col-6 left">
+      <img src="img/formulario-img.png" alt="formulario" width="450px">
+    </div>
+    <div class="g-col-6">
+      <div class="container">
+        <form class="formulario">
+          <h2 class="h2">Faça seu cadastro:</h2>
+          <label class="form-label" for="nome">Seu nome:</label>
+          <input class="form-control form-control-sm" type="text" id="nome">
+          <label class="form-label" for="email">Seu e-mail:</label>
+          <input class="form-control form-control-sm" type="email" id="email">
+          <label class="form-label" for="telefone">Seu telefone:</label>
+          <input class="form-control form-control-sm" type="tel" id="telefone" placeholder="(00) 00000-0000">
+          <div class="form-check form-switch">
+            <label class="form-check-label" for="aceito-termos">Li e concordo com os termos do site</label>
+            <input class="form-check-input" type="checkbox" id="aceito-termos" required></input>
+          </div>
+          <button class="btn btn-success" type="button">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
